@@ -4,7 +4,9 @@ set -eo pipefail
 day=$1
 
 if [ -z "$day" ]; then
-  echo "please provide day number. eg: 3"
+  echo "Usage: new_day.sh <day>"
+  echo ""
+  echo "  day  the day number to create"
   exit 1
 fi
 
