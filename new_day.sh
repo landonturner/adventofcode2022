@@ -21,4 +21,6 @@ curl -s -b "session=$AOC_SESSION" https://adventofcode.com/2022/day/$day/input -
 
 popd > /dev/null
 
+cd $day
+
 open "https://adventofcode.com/2022/day/$day"
