@@ -4,7 +4,7 @@ set -eo pipefail
 day=$1
 
 if [ -z "$day" ]; then
-  for d in $(ls); do
+  for d in $(ls | sort -V); do
     if [ "$d" == "README.md" ]; then
       break
     fi
